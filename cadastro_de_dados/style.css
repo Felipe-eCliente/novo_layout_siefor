@@ -1,0 +1,232 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+
+body{
+    overflow-x: hidden;
+
+    &>*{
+        font-family: "Inter", sans-serif !important;
+    }
+}
+
+.inter-font{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+}
+
+li::after, li::before{
+    content: '';
+    background-color: transparent !important;
+    display: none !important;
+}
+
+a:has(> p.header_buttons){
+    display: contents !important;
+    color: #284F89 !important;
+}
+
+div.steps{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+div.steps > ul > li{
+    position: relative;
+}
+
+.payments_buttons_txt{
+    font-size: 13px;
+}
+
+div.steps > ul > li{
+    background-color: #D6DBE6;
+    border-radius: 2rem;
+    margin-block: 2px;
+}
+
+@media (min-width: 768px){
+    div.steps > ul > li:first-child{
+        background-color: #E0E3EB;
+        border-bottom-left-radius: 2em;
+        border-top-left-radius: 2em;
+    }
+    
+    div.steps > ul > li:last-child{
+        background-color: #E0E3EB;  
+        border-bottom-right-radius: 2em;
+        border-top-right-radius: 2em;
+    }
+
+    div.steps > ul > li{
+        border-radius: 0;
+    }
+
+    .payments_buttons_txt{
+        font-size: 15px ;
+    }
+    
+}
+
+
+
+
+
+div.steps > ul > li::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: 10px solid #E0E3EB;
+    background-color: #E0E3EB;  
+    border-radius: 2em;
+}
+
+p.header_buttons{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_buttons{
+    width: 100%;
+}
+
+.steps > ul > li{
+    height: 50px !important;
+}
+
+li.current{
+    background-color: #284F89 !important;
+    
+}
+
+.current > a > p{
+    color: white;
+}
+
+.logo-siefor{
+    width: 18%;
+}
+
+.main-form-container{
+    width: 70%;
+}
+
+.main-form-container > div > div{
+    padding: 0;
+}
+
+
+.validation-wizard a{
+    text-decoration: none;
+}
+
+body{
+    width: 100%;
+}
+
+input::placeholder{
+    font-size: 1em;
+}
+
+.prox_button{
+    background-color: #284F89 !important;
+}
+
+.return_button{
+    background-color: white;
+    border: 2px solid #284F89;
+    color: #284F89;
+    font-weight: 600;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.375rem;
+}
+
+.card_top{
+    height: 40px; 
+    background-color: #284F89;
+}
+
+.payments_buttons{
+    height: 40px; 
+    background-color: white; 
+    color: #284F89; 
+    border-color: #284F89; 
+    border: 2px solid #284F89;
+    cursor: pointer;
+}
+.moments > li::marker{
+    color: #284F89;
+}
+.moments{
+    color: #284F89;
+}
+
+.button_active{
+    height: 40px; 
+    background-color: #284F89; 
+    color: white; 
+    border-color: white; 
+    border: 2px solid #284F89;
+    cursor: pointer;
+}
+
+.wizard-content .wizard > .actions > ul > li > a {
+    background-color: #284F89;
+    margin-top: 15px;
+}
+
+.logo{
+    margin: 10px 0;
+    height: 50px;
+}
+
+.modal-header{
+    background-color: #284F89;
+}
+
+.modal_button{
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background-color: transparent;
+    border-radius: .3em;
+}
+
+.blue{
+    background-color: #284F89;
+    border: 2px solid #284F89;
+    color: white;
+}
+
+.white{
+    background-color: white;
+    border: 2px solid #284F89;
+    color: #284F89;
+}
+
+.send_cancel_buttons > button{
+    height: 40px;
+}
+
+.footer_size{
+    height: max-content;
+}
+
+select{
+    font-size: 1em !important;
+}
+.option_default{
+    height: 37px;
+}

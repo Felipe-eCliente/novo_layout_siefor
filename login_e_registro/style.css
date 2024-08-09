@@ -1,0 +1,237 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+
+}
+
+
+main{
+    width: 100%;
+    height: 100dvh;
+    
+    display: flex;
+}
+
+/*---------- Lado esquerdo, parte de formulário ----------*/
+
+.forms-container{
+    width: 35%;
+    padding: 20px 30px;
+
+    background-color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logo{
+    width: 100%;
+    
+}
+
+.logo > img{
+    width: 230px;
+}
+
+.logo > p{
+    font-size: 18px;
+}
+
+.forms{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form, .cadastro-form{
+    width: 100%;
+
+    margin: 40px 0;
+}
+
+.sub-form-container{
+    margin: auto 0;
+    height: 100%;
+}
+
+.password-main-container{
+    margin: 10px 0;
+}
+
+h1{
+    font-size: 2.2em;
+    margin-bottom: 15px;
+}
+
+a{
+    font-size: .9em;
+    margin-top: 20px;
+}
+
+label{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.recover-password{
+    margin-top: 10px;
+}
+
+.email-container > input, .password-container > input, .turma-container > input{
+    width: 100%;
+    height: 40px;
+
+    padding: 8px;
+    padding-left: 5px;
+
+    border: 0;
+    outline: 0;
+    font-size: .6rem;
+    font-weight: 400;
+
+    transition: all .3s ease;
+}
+
+.email-container > input::placeholder, .password-container > input::placeholder, .turma-container > input::placeholder{
+    color: #7C8A92;
+    font-size: 1.4em;
+}
+
+.password-container > input{
+    position: relative;
+}
+
+.email-container, .password-container, .turma-container{
+    height: fit-content;
+    
+    display: flex;
+    align-items: center;
+
+    border: 1px solid #E6E6E6;
+    
+    margin-top: 8px;
+}
+
+.email-container > div > img, .password-container > div > img, .turma-container > div > img{
+    height: 16px;
+}
+
+.icon-container{
+    height: 100%;
+    width: 30px;
+
+    display: flex;
+    align-items: center;
+    padding-left: .4em;
+}
+
+.login-submit-button, .turma-submit-button{
+    width: 100%;
+    
+    font-size: 1.2em;
+    font-weight: 500;
+    
+    padding: 6px 0;
+    border: 0;
+    border-radius: 3px;
+
+    outline: none;
+
+    cursor: pointer;
+
+    transition: all .3s ease-in-out;
+}
+
+.email-main-container, .password-main-container, .main-turma-container{
+    margin-top: 10px;
+}
+
+.login-submit-button{
+    background-color: #284F89;
+    color: white;
+    border: 1px solid transparent;
+}
+
+.turma-submit-button:hover, .login-submit-button:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+}
+
+.turma-submit-button{
+    border: 1px solid #284F89;
+    color: #284F89;
+    margin-top: 10px;
+}
+
+.footer-container{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-container > span{
+    font-size: .6em;
+}
+
+/*---------- Lado direito, container da imagem ----------*/
+
+.image-container{
+    width: 75%;
+
+    background-image: url(assets/image/Img.png);
+    background-size: cover;
+}
+
+/*---------- Responsividade ----------*/
+
+@media screen and (max-width: 480px) {
+    h1{
+        font-size: 1.8em;
+    }
+    
+    a{
+        font-size: .9em;
+        margin-top: 20px;
+    }
+    
+    label{
+        font-size: .8em;
+        font-weight: 400;
+    }
+
+    .image-container{
+        display: none;
+    }
+
+    .forms-container{
+        width: 100%;
+        height: 100%;
+    }
+
+    .sub-form-container{
+        margin: auto 0;
+        height: max-content;
+    }
+
+    .login-form, .cadastro-form{
+        margin: 40px 0;
+    }
+
+    main{
+        background-image: url(assets/image/Img.png);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

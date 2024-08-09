@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="http://testenovogestor.ecliente5.com.br/template/assets/images/favicon.png">
+    <title>Exemplo form wizard</title>
+    <!-- importa o css do wizard -->
+    <link href="http://testenovogestor.ecliente5.com.br/template/assets/plugins/wizard/steps.css" rel="stylesheet">
+    <!-- importa o css da biblioteca de alerta -->
+    <link href="http://testenovogestor.ecliente5.com.br/template/assets/plugins/sweetalert/sweetalert.css"
+        rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="fix-header d-flex flex-column align-items-center card-no-border fix-sidebar">
+
+    <div class="logo w-75 ">
+        <img src="assets/icons/logo_siefor.svg" alt="" class="logo">
+    </div>
+    <div class="row" id="validation">
+        <div class="col-12">
+            <div class="card-no-border wizard-content ">
+                <div class="card-body d-flex justify-content-center">
+                    <form action="#" class="w-75 validation-wizard wizard-circle main-form-container">
+                        <!-- -------------------- Início dados_pessoais -------------------- -->
+                        <h6>Dados pessoais</h6>
+                        <section>
+                            <div class="d-flex flex-column row-gap-2 " id="dados_pessoais">
+                                <div class="row column-gap-3">
+                                    <div class="col-md">
+                                        <label for="" class="m-0 p-0">Nome Completo</label>
+                                        <input type="text" name="nome" placeholder="Digite seu nome completo"
+                                            class="form-control">
+                                    </div>
+                                    <div class="col-md">
+                                        <label for="turma">Turma</label>
+                                        <input type="" name="turma" disabled class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row column-gap-3">
+                                    <div class="col-md select-container">
+                                        <label for="sexo">Sexo</label>
+                                        <div class="select-container">
+                                            <select name="sexo" id="" class="form-select option_default">
+                                                <option value="Selecione" disabled selected class="d-none ">Selecione
+                                                </option>
+                                                <option value="Masculino">Masculino</option>
+                                                <option value="Feminino">Feminino</option>
+                                                <option value="Outros">Outros</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md">
+                                        <label for="data-nascimento">Data de nascimento</label>
+                                        <input type="text" name="data-nasimento" id="" class="form-control"
+                                            placeholder="Digite sua data de nascimento">
+                                    </div>
+                                </div>
+                                <div class="row column-gap-3">
+                                    <div class="col-md">
+                                        <label for="CPF">CPF</label>
+                                        <input type="text" name="CPF" id="" class="form-control"
+                                            placeholder="Digite seu CPF">
+                                    </div>
+                                    <div class="col-md">
+                                        <label for="RG">RG</label>
+                                        <input type="text" name="RG" id="" class="form-control"
+                                            placeholder="Digite seu RG">
+                                    </div>
+                                    <div class="col-md">
+                                        <label for="RA">Documento RA</label>
+                                        <input type="text" name="RA" id="" class="form-control"
+                                            placeholder="Digite seu RA">
+                                    </div>
+                                </div>
+                                <div class="row column-gap-3">
+                                    <div class="col-md">
+                                        <label for="E-mail">E-mail para acesso na intranet</label>
+                                        <input type="tel" name="E-mail" id="" class="form-control"
+                                            placeholder="Digite seu E-mail">
+                                    </div>
+                                    <div class="col-md">
+                                        <label for="telefone">Telefone</label>
+                                        <input type="text" name="telefone" id="" class="form-control"
+                                            placeholder="Digite seu telefone">
+                                    </div>
+                                    <div class="col-md">
+                                        <label for="celular">Celular</label>
+                                        <input type="text" name="celular" id="" placeholder="Deigite seu celular"
+                                            class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row column-gap-3">
+                                    <div class="col-md">
+                                        <label for="altura">Altura</label>
+                                        <input type="text" name="altura" id="" placeholder="Digite sua altura"
+                                            class="form-control">
+                                    </div>
+                                    <div class="col-md">
+                                        <label for="peso">Peso</label>
+                                        <input type="text" class="form-control" name="peso" id=""
+                                            placeholder="Digite seu peso">
+                                    </div>
+                                    <div class="col-md">
+                                        <label for="N-calcado">N° do calçado</label>
+                                        <input type="text" class="form-control" name="N-calcado" id=""
+                                            placeholder="Digite o N° de calçado">
+                                    </div>
+                                    <div class="col-md">
+                                        <label for="camiseta">Tamanho de camisa</label>
+                                        <input type="text" class="form-control" name="camiseta" id=""
+                                            placeholder="Digite seu tamanho de camisa">
+                                    </div>
+                                </div>
+                                <div class="row column-gap-3">
+                                    <div class="col-md">
+                                        <label for="senha">Senha</label>
+                                        <input type="password" name="senha" id="" class="form-control"
+                                            placeholder="Digite sua senha">
+                                    </div>
+                                    <div class="col-md">
+                                        <label for="confirmar-senha">Confirmar senha </label>
+                                        <input type="password" name="confirmar-senha" id="" class="form-control"
+                                            placeholder="Digite sua senha novamente">
+                                    </div>
+                                </div>
+                                <div class="row column-gap-3">
+                                    <div class="col-md">
+                                        <label for="" class="m-0 p-0">Aceita receber mailing?</label>
+                                        <div class="select-container">
+                                            <select name="" id="" class="form-select">
+                                                <option value="Sim">Sim</option>
+                                                <option value="Não">Não</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md">
+                                        <label for="" class="m-0 p-0">Aceita receber SMS?</label>
+                                        <div class="select-container">
+                                            <select name="" id="" class="form-select">
+                                                <option value="Sim">Sim</option>
+                                                <option value="Não">Não</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md">
+                                        <label for="" class="m-0 p-0">Aceita receber Whatsapp?</label>
+                                        <div class="select-container">
+                                            <select name="" id="" class="form-select">
+                                                <option value="Sim">Sim</option>
+                                                <option value="Não">Não</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </section>
+                        <!-- ---------- Fim cadastro dados pessoais & Início cadastro de endereço ---------- -->
+                        <h6>Endereço</h6>
+                        <section>
+
+                            <div class="d-flex flex-column row-gap-3 " id="cadastro_endereco">
+                                <div class="row column-gap-3">
+                                    <div class="col-md">
+                                        <label for="Cidade_UF">Cidade / UF</label>
+                                        <input type="text" class="form-control" name="Cidade_UF" id=""
+                                            placeholder="Digite sua cidade/UF">
+                                    </div>
+                                    <div class="col-md">
+                                        <label for="camiseta">CEP</label>
+                                        <input type="text" class="form-control" name="camiseta" id=""
+                                            placeholder="Digite seu CEP">
+                                    </div>
+                                    <div class="col-md">
+                                        <label for="camiseta">Bairro</label>
+                                        <input type="text" class="form-control" name="camiseta" id=""
+                                            placeholder="Digite seu bairro">
+                                    </div>
+                                </div>
+                                <div class="row column-gap-3">
+                                    <div class="col-md">
+                                        <label for="Endereco">Endereço</label>
+                                        <input type="text" class="form-control" name="Endereco" id=""
+                                            placeholder="Digite seu endereço">
+                                    </div>
+                                    <div class="col-md">
+                                        <label for="N_da_residencia">N° da Residencia</label>
+                                        <input type="text" class="form-control" name="N_da_residencia" id=""
+                                            placeholder="Digite o numero de sua residência">
+                                    </div>
+                                    <div class="col-md">
+                                        <label for="Complemento">Complemento</label>
+                                        <input type="text" class="form-control" name="Complemento" id=""
+                                            placeholder="Digite o complemento de sua residência">
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- ---------- Fim cadastro de endereço & Início planos ---------- -->
+                        <h6>Planos</h6>
+                        <section>
+                            <div class="card">
+                                <div class="card-img-top m-0 ps-4 text-white row align-items-center card_top">
+                                    <p class="m-0 p-0">
+                                        <strong>
+                                            Plano A
+                                        </strong>
+                                    </p>
+                                </div>
+                                <div class="card-body p-4 mt-2">
+                                    <div class="row mb-md-4 justify-content-between">
+                                        <div class="col-md-8">
+                                            <h5>Descrição</h5>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus dolor
+                                                pretium, commodo nulla et, venenatis tellus. Nulla eu enim a diam
+                                                tristique faucibus. Cras vulputate molestie nibh, vel dapibus metus
+                                                aliquet tincidunt. Proin mi ante, elementum vitae libero ut, vehicula
+                                                volutpat elit. Aliquam non velit in ipsum tincidunt dignissim.</p>
+
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p>
+                                                <strong>
+                                                    Momento(s):
+                                                </strong>
+                                            </p>
+                                            <ul class="moments">
+                                                <li>Baile de Gala</li>
+                                                <li>Jantar</li>
+                                                <li>Sessão Solene</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row mt-md-5 mb-2">
+                                        <p>
+                                            <strong>
+                                                Forma(s) de Pagamento:
+                                            </strong>
+                                        </p>
+                                        <div class="row column-gap-3 px-4">
+                                            <button
+                                                class="d-flex rounded-pill col-md-3 align-items-center payments_buttons">
+                                                <img src="assets/icons/check_inactive.svg" alt=""
+                                                    class="payments_buttons_icons">
+                                                <p class="m-0 ms-2 payments_buttons_txt">R$ 80,00 - 9 Parcelas</p>
+                                        </button>
+                                            <button
+                                                class="d-flex rounded-pill col-md-3 align-items-center payments_buttons">
+                                                <img src="assets/icons/check_inactive.svg" alt=""
+                                                    class="payments_buttons_icons">
+                                                <p class="m-0 ms-2 payments_buttons_txt">R$ 80,00 - 4 Parcelas</p>
+                                        </button>
+                                            <button
+                                                class="d-flex rounded-pill col-md-3 align-items-center payments_buttons">
+                                                <img src="assets/icons/check_inactive.svg" alt=""
+                                                    class="payments_buttons_icons">
+                                                <p class="m-0 ms-2 payments_buttons_txt">R$ 80,00 - 1 Parcelas</p>
+                                        </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- ---------- Fim planos ---------- -->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" tabindex="-1" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-white"><Strong>Dados de Pagamento</Strong></h5>
+            </div>
+            <div class="modal-body">
+                <div class="p-3">
+                    <div class="row mb-2">
+                        <label for="" class="m-0 p-0">Valor total do plano</label>
+                        <input type="text" name="" id="" class="form-control" disabled>
+                    </div>
+                    <div class="row my-2">
+                        <label for="" class="m-0 p-0">N° máximo de parcelas permitido</label>
+                        <input type="text" name="" id="" class="form-control" disabled>
+                    </div>
+                    <div class="row my-2">
+                        <label for="" class="m-0 p-0">N° de parcelas selecionadas pelo aluno</label>
+                        <input type="text" name="" id="" class="form-control">
+                    </div>
+                    <div class="row mt-2">
+                        <label for="" class="m-0 p-0">Data do 1° vencimento</label>
+                        <input type="text" name="" id="" class="form-control" disabled>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer w-100 footer_size">
+                <div class="row w-100 send_cancel_buttons column-gap-3">
+                        <button type="button" class="modal_button white col-md close" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="button" class="modal_button blue col-md" id="close">Confirmar</button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    
+    <script src="http://testenovogestor.ecliente5.com.br/template/assets/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="http://testenovogestor.ecliente5.com.br/template/assets/plugins/bootstrap/js/popper.min.js"></script>
+    <script
+        src="http://testenovogestor.ecliente5.com.br/template/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- importa a biblioteca do form wizard -->
+    <script src="http://testenovogestor.ecliente5.com.br/template/assets/plugins/wizard/jquery.steps.min.js"></script>
+    <!-- importa a biblioteca de validação de form  -->
+    <script
+        src="http://testenovogestor.ecliente5.com.br/template/assets/plugins/wizard/jquery.validate.min.js"></script>
+    <!-- importa a biblioteca do alerta  -->
+    <script src="http://testenovogestor.ecliente5.com.br/template/assets/plugins/sweetalert/sweetalert.min.js"></script>
+    <script src="assets/script.js"></script>
+    <script>
+        $(function () {
+
+            //customizando as mensagens de erro
+            $.validator.messages = {
+                required: "Esse campo é obrigatório.",
+                remote: "Digite um valor válido.",
+                email: "Digite um e-mail válido.",
+                url: "Digite uma URL válida.",
+                date: "Digite uma data válida.",
+                dateISO: "Digite uma data válida (ISO).",
+                number: "Digite um número válido.",
+                digits: "Digite apenas números.",
+                equalTo: "Digite o mesmo valor novamente.",
+                min: "Digite um valor igual ou maior que {0}."
+            };
+
+            //exibindo o form e guardando ele em uma variavel
+            var form = $(".validation-wizard").show();
+
+            //configurações do form wizard
+            $(".validation-wizard").steps({
+                //tag que vai ser utilizada para identificação dos cabeçalhos
+                headerTag: "h6",
+                //tag que vai ser utilizada para identificação das seções
+                bodyTag: "section",
+                //efeito da transição entre os passos
+                transitionEffect: "fade",
+                //configuração do cabeçalho Lembrar de fazer os cards que passam
+                titleTemplate: '<p class="header_buttons"> #title# </p>',
+                //configuração dos botões
+                labels: {
+                    finish: "Finalizar",
+                    next: 'Próximo',
+                    previous: 'Anterior'
+                },
+                //configuração do que acontece quando o usuário avançar o form
+                onStepChanging: function (event, currentIndex, newIndex) {
+                    if (newIndex == 2) {
+                        $('.payments_buttons').on('click', (e) => {
+                            $('#exampleModal').modal('show')
+                            PBaddClass(e.currentTarget)
+                        })
+                    }
+                    return true
+                },
+                //configuração do que acontece quando o usuário estiver finalizando o form
+                onFinishing: function (event, currentIndex) {
+                    return form.validate().settings.ignore = ":disabled", form.valid()
+                },
+                //configuração do que acontece quando o usuário finalizar o form
+                onFinished: function (event, currentIndex) {
+                    swal("Form enviado!", "Yuuuuupiiiiii");
+                }
+            });
+
+            //configurações do validador de form
+            $(".validation-wizard").validate({
+                //campos que o validador deve ignorar
+                ignore: "input[type=hidden]",
+                //classe que vai ser adicionada na mensagem de erro
+                errorClass: "text-danger",
+                //classe que vai ser adicionada ao campo com erro
+                highlight: function (element, errorClass) {
+                    $(element).removeClass(errorClass)
+                },
+                //classe que vai ser adicionada ao campo que está correto
+                unhighlight: function (element, errorClass) {
+                    $(element).addClass('text-success')
+                },
+                //configuração de onde vai ser exibido o erro
+                errorPlacement: function (error, element) {
+                    error.insertAfter(element)
+                    // swal('erro', error[0].innerHTML)
+                },
+                rules: {
+                    email: {
+                        email: !0
+                    }
+                }
+            });
+        });
+
+        $("#close").on("click", (e) => {
+            $('#exampleModal').modal('hide')
+        })
+    </script>
+    
+</body>
+
+</html>
